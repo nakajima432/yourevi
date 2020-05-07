@@ -8,25 +8,6 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
-    .header
-      %ul.header__title-lists
-        %li.title-list
-          = link_to '/', class: "home-link" do
-            = icon('fab', 'youtube',class: 'youtube-icon')
-            %p.title
-              YOUREVI
-        %li.title-list
-          %h3.sub-title
-            \- ユーレビ -
-
-      %ul.header__lists
-        %li.list
-          = link_to videos_path, class: "post-info" do
-            投稿一覧
-        %li.list
-          = link_to "#", class: "my-page" do
-            = icon('fas', 'user',class: 'user-icon')
-            .user-name
-              ログイン
-              -# = current_user.name
+    .wrapper
+      = render "shared/header"
     = yield

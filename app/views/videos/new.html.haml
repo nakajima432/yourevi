@@ -1,2 +1,7 @@
-.content__title
+.content-title
   新規記事の作成
+
+= form_with model: @video, class: "form", local: true do |form|
+  = form.text_field :title, placeholder: :タイトル, class: "form-title"
+  = form.text_area :content, placeholder: :詳細, class: "form-text"
+  = form.submit '投稿する', class: "form-btn"
