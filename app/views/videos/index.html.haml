@@ -11,6 +11,8 @@
         .content__right__bottom
           = video.youtuber_name
           = video.detail
+          .content__right__bottom--userName
+            = video.user.user_name
           .content__right__bottom--date
             =video.url
             -# = video.created_at

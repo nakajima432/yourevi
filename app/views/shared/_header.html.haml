@@ -16,10 +16,11 @@
     %li.list
       = link_to videos_path, class: "header__right--btn" do
         投稿一覧
-    %li.list
-      - if user_signed_in?
-        -# = link_to "#", class: "header__right--btn" do
-        -#   = current_user
+    - if user_signed_in?
+      %li.list
+        = link_to current_user.user_name, "#", class: "header__right--btn"
+      %li.list
         = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "header__right--btn"
-      - else
+    - else
+      %li.list
         = link_to "ログイン", new_user_session_path, class: "header__right--btn"

@@ -1,6 +1,6 @@
 class VideosController < ApplicationController
   def index
-    @videos = Video.all
+    @videos = Video.includes(:user)
   end
 
   def new
@@ -34,7 +34,7 @@ class VideosController < ApplicationController
 
   private
   def video_params
-    params.require(:video).permit(:title, :youtuber_name, :url, :detail )
+    params.require(:video).permit(:title, :youtuber_name, :url, :detail).merge(user_id: current_user.id)
   end
 
 end
