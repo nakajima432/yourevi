@@ -11,14 +11,15 @@
 
   %ul.header__lists
     %li.list
-      = link_to new_video_path, class: "presentation" do
+      = link_to new_video_path, class: "header__right--btn" do
         プレゼンする
     %li.list
-      = link_to videos_path, class: "post-info" do
+      = link_to videos_path, class: "header__right--btn" do
         投稿一覧
     %li.list
-      = link_to "#", class: "my-page" do
-        = icon('fas', 'user',class: 'user-icon')
-        .user-name
-          ログイン
-          -# = current_user.name
+      - if user_signed_in?
+        -# = link_to "#", class: "header__right--btn" do
+        -#   = current_user
+        = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "header__right--btn"
+      - else
+        = link_to "ログイン", new_user_session_path, class: "header__right--btn"

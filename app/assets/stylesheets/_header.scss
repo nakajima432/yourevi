@@ -39,58 +39,17 @@
       }
     }
   }
-  // .form {
-  //   height: 20px;
-  //   width: 30%;
-  //   background-color: white;
-  // }
   &__lists {
     display: flex;
     .list {
       display: flex;
-      .presentation {
+      .header__right--btn {
         display: flex;
         text-decoration: none;
         color: white;
         line-height: 50px;
         padding: 0 15px;
         text-shadow: 1px 1px 0 #999999
-      }
-      .post-info {
-        display: flex;
-        text-decoration: none;
-        color: white;
-        line-height: 50px;
-        padding: 0 15px;
-        text-shadow: 1px 1px 0 #999999
-        // .post-icon {
-        //   font-size: 20px;
-        //   color: white;
-        //   margin-left: 10px;
-        // }
-        // .icon-message {
-        //   text-decoration: none;
-        //   color: white;
-        // } 
-      }
-      .my-page {
-        display: flex;
-        text-decoration: none;
-        line-height: 50px;
-        padding: 0 15px;
-        text-shadow: 1px 1px 0 #999999;
-        .user-icon {
-          line-height:50px;
-          color: white;
-          // font-weight: bold;
-          // font-family: arial;
-          font-size: 20px;
-        }
-        .user-name {
-          text-decoration: none;
-          color: white;
-          margin-left: 5px;
-        }
       }
     }
     .list:hover {
