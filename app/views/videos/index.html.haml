@@ -1,0 +1,12 @@
+.wrapper
+  = render "shared/header"
+- @videos.each do |video|
+  .content
+    .content__left
+      .content__left--image
+    .content__right
+      .content__right__top
+        = video.title
+      .content__right__bottom
+        .content__right__bottom--date
+          = video.created_at
