@@ -1,0 +1,13 @@
+.row
+  .videoTitle
+    = @video.title
+  .videoDate
+    = @video.url
+    %br/
+    = @video.youtuber_name
+  .videoAuthor
+  .videoText
+    = simple_format @video.detail
+  .videoManage
+  = link_to "編集", edit_video_path(@video.id), class: "videoManage__edit"
+  = link_to "削除", video_path(@video.id), method: :delete, class: "videoManage__delete"

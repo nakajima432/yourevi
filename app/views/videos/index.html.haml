@@ -1,15 +1,16 @@
 .wrapper
   = render "shared/header"
-- @videos.each do |video|
-  .content
-    .content__left
-      .content__left--image
-    .content__right
-      .content__right__top
-        = video.title
-      .content__right__bottom
-        = video.youtuber_name
-        = video.detail
-        .content__right__bottom--date
-          =video.url
-          -# = video.created_at
+.row
+  - @videos.each do |video|
+    .content
+      .content__left
+        .content__left--image
+      .content__right
+        .content__right__top
+          = link_to video.title, video_path(video.id), class: "content__right__top--title"
+        .content__right__bottom
+          = video.youtuber_name
+          = video.detail
+          .content__right__bottom--date
+            =video.url
+            -# = video.created_at

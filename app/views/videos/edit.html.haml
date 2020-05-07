@@ -1,0 +1,9 @@
+.row
+  .content-title
+    新規でプレゼンする
+  = form_with model: @video, class: "form", local: true do |f|
+    = f.text_field :title, placeholder: :タイトル, class: "form-contents"
+    = f.text_field :youtuber_name, placeholder: :"Youtuberの名前", class: "form-youtuber"
+    = f.text_field :url, placeholder: :オススメ動画のURL, class: "form-contents"
+    = f.text_area :detail, placeholder: :プレゼン内容を入力してください！, class: "form-detail"
+    = f.submit '投稿する', class: "form-btn"
