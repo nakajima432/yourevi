@@ -1,0 +1,84 @@
+.contents {
+  height: calc(100vh - 50px);
+  width: 100%;
+  padding-top: 50px;
+  #home {
+    background-image: url(images/top);
+    min-height: 93.6vh;
+    position: relative;
+    // background-color: #dddddd;
+    // background-blend-mode: hard-light;
+    .home-content {
+      text-align: center;
+      margin: 15% 20% 0;
+      position: absolute;
+      // .page-name {
+      //   color: white;
+      //   font-family: 'Philosopher', serif;
+      // }
+      .page-title {
+        text-align: center;
+        font-size: 5rem;
+        font-family: 'Philosopher', serif;
+        text-transform: uppercase;
+        font-weight: normal;
+        text-transform: none;
+        color: white;
+        text-shadow: 2px 2px 0 #000
+      }
+      .page-sub-title {
+        font-size: 1.125rem;
+        margin: 15px 0 42px;
+        color: white;
+        text-shadow: 1px 1px 0 #000
+      }
+      .button {
+        font-size: 1.375rem;
+        background: #0bd;
+        color: #fff;
+        border-radius: 5px;
+        padding: 15px 32px;
+        text-decoration: none;
+      }
+      .button:hover {
+        background: #0090aa;
+      }
+    }
+  }
+  .big-bg {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+  // .post-content {
+  //   height: 93.8vh;
+  //   width: 100%;
+  //   background-color: #fafafa;
+  //   position: relative;
+  //   .hot-news {
+  //     position: absolute;
+  //     height: 35px;
+  //     width: 65.5%;
+  //     margin-left: 17%;
+  //     margin-top: 1%;
+  //     border-radius: 5px;
+  //     background-color: #FF97C2;
+  //     text-align: center;
+  //     .hot-news__link {
+  //       text-decoration-color: white;
+  //       line-height: 35px;
+  //       color: white;
+  //     }
+  //   }
+  //   .btn-group {
+  //     margin: 4.5% 0 1% 17%;
+  //     text-decoration: none;
+  //     .btn.page-link.text-dark.d-inline-block {
+  //       background-color: white;
+  //     }
+  //     .btn.page-link.text-dark.d-inline-block:hover {
+  //       background-color: #e6e6e6;
+  //     }
+  //   }
+  // }
+}
