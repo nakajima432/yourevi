@@ -48,6 +48,14 @@
     display: flex;
     .list {
       display: flex;
+      .presentation {
+        display: flex;
+        text-decoration: none;
+        color: white;
+        line-height: 50px;
+        padding: 0 15px;
+        text-shadow: 1px 1px 0 #999999
+      }
       .post-info {
         display: flex;
         text-decoration: none;
