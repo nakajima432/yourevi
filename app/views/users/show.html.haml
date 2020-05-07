@@ -1,3 +1,6 @@
 .row
+  .videoTitle
+    = @user.user_name
+    さんの投稿一覧
   - @videos.each do |video|
     = render partial: "shared/videos", locals: { video: video }

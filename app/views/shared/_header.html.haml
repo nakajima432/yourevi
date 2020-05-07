@@ -18,7 +18,7 @@
         投稿一覧
     - if user_signed_in?
       %li.list
-        = link_to current_user.user_name, "#", class: "header__right--btn"
+        = link_to current_user.user_name, user_path(current_user), class: "header__right--btn"
       %li.list
         = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "header__right--btn"
     - else

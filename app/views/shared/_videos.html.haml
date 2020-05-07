@@ -1,0 +1,14 @@
+.content
+  .content__left
+    .content__left--image
+  .content__right
+    .content__right__top
+      = link_to video.title, video_path(video.id), class: "content__right__top--title"
+    .content__right__bottom
+      = video.youtuber_name
+      = video.detail
+      .content__right__bottom--userName
+        = link_to video.user.user_name, user_path(video.user), class: "content__right__bottom--userName--btn"
+      .content__right__bottom--date
+        = video.url
+        = video.created_at
